@@ -4,11 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <EditText
-        android:id="@+id/tv_video_url"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/tv_url_placeholder" />
 
     <Button
         android:layout_width="wrap_content"
@@ -16,9 +11,16 @@
         android:id="@+id/btn_play"
         android:text="@string/btn_play"/>
 
-    <WebView
-        android:id="@+id/wv_video"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        ></WebView>
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_stop"/>
+
+    <Button
+        android:id="@+id/btn_stop_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_stop_service"/>
+
 </LinearLayout>

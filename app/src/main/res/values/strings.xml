@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">YouTube Audio</string>
-    <string name="btn_play">Play!</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_stop_service">Stop service</string>
     <string name="tv_url_placeholder">Enter Video URL and tap "Play"</string>
 </resources>
