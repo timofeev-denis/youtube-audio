@@ -9,6 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -17,8 +18,15 @@ android {
         }
     }
 }
+repositories {
+    mavenCentral()
+}
 
 dependencies {
+    implementation 'com.google.code.findbugs:jsr305:2.0.1'
+    implementation 'com.google.apis:google-api-services-youtube:v3-rev187-1.23.0'
+    implementation 'com.google.api-client:google-api-client-android:1.23.0'
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
